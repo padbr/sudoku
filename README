@@ -49,4 +49,4 @@ SOLVED
 
 ### Notes:
 The 'Sudoku.py' script simply uses the logic I programmed into it over and over. It will stop if it solves the puzzle and print the result. If it cannot make progress after enough rounds of running all types of logic, it will give up and print out its progess.
-The 'subrute.py' script will solve the puzzle. In fact, if you feed it a puzzle with more than one solution, it will find a print all possible solutions.
+The 'subrute.py' script WILL solve the puzzle. In fact, if you feed it a puzzle with more than one solution, it will find and print all possible solutions.
