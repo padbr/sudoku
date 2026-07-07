@@ -2,7 +2,10 @@
 A couple of approaches to solving sudoku puzzles in python
 
 ## Introduction
-This repositry is a little hobby project of mine. I like solving sudoku puzzles and I use python a lot, so naturally I combined the two to do this project. I took two different approaches: (i) 'Sudoku.py': where I took all of the logic I know to solve sudoku puzzles, coded that in python and made a solver out of it, and (ii) 'subrute.py': using a brute-force approach with minimal logic just to avoid trying impossible solutions. The first approach was my real passion in this project, and was a good challenge for me to complete. The second approach (subrute) is definitely the more sensible approach. It was much easier to code and performs really well.
+This repositry is a little hobby project of mine. I like solving sudoku puzzles and I use python a lot, so naturally I combined the two to do this project.
+I took two different approaches: (i) 'Sudoku.py': where I took all of the logic I know to solve sudoku puzzles, coded that in python and made a solver out of it, and (ii) 'subrute.py': using a brute-force approach with minimal logic just to avoid trying impossible solutions.
+The first approach was my real passion in this project, and was a good challenge for me to complete and helped me to learn how to write classes and class methods in python.
+The second approach (subrute) is definitely the more sensible approach. It is the approach I would take if I was tasked with making a sudoku solver in python and wasn't interested in it as a personal project. It was much easier to code and performs really well.
 
 ## Usage
 Both scripts are used in the same way. I recommend editing the shebang line as appropriate for your environment and making them executable. Simply call the script on your command line and follow the prompt to enter a game's data. The game is entered starting from the top left, going from left to right for each row, and then working down the rows. Blank squares need to be indicated with a zero. Example:
@@ -41,3 +44,9 @@ SOLVED
 : 2 3 1 : 5 4 9 : 6 8 7 :
  ------- ------- -------
 0.0016379356384277344 seconds
+
+
+
+### Notes:
+The 'Sudoku.py' script simply uses the logic I programmed into it over and over. It will stop if it solves the puzzle and print the result. If it cannot make progress after enough rounds of running all types of logic, it will give up and print out its progess.
+The 'subrute.py' script will solve the puzzle. In fact, if you feed it a puzzle with more than one solution, it will find a print all possible solutions.
