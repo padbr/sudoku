@@ -1,0 +1,43 @@
+# sudoku
+A couple of approaches to solving sudoku puzzles in python
+
+## Introduction
+This repositry is a little hobby project of mine. I like solving sudoku puzzles and I use python a lot, so naturally I combined the two to do this project. I took two different approaches: (i) where I took all of the logic I know to solve sudoku puzzles, coded that in python and made a solver out of it, and (ii) using a brute-force approach with minimal logic just to avoid trying impossible solutions. The first approach was my real passion in this project, and was a good challenge for me to complete. The second approach (subrute) is definitely the more sensible approach. It was much easier to code and performs really well.
+
+## Usage
+Both scripts are used in the same way. I recommend editing the shebang line as appropriate for your environment and making them executable. Simply call the script on your command line and follow the prompt to enter a game's data. The game is entered starting from the top left, going from left to right for each row, and then working down the rows. Blank squares need to be indicated with a zero. Example:
+
+./subrute.py 
+Type or paste a game. Use 0 for unknown numbers.
+300057000072100008006830000000000030010706029000000060008620000045300002200049000
+Solving:
+ ------- ------- -------
+: 3 8   : 9 5 7 :       :
+:   7 2 : 1 6 4 :     8 :
+:     6 : 8 3 2 :       :
+ ------- ------- -------
+:       :     5 :   3   :
+:   1   : 7 8 6 :   2 9 :
+:       :     3 :   6   :
+ ------- ------- -------
+:     8 : 6 2 1 :       :
+:   4 5 : 3 7 8 :     2 :
+: 2     : 5 4 9 :       :
+ ------- ------- -------
+
+
+SOLVED
+ ------- ------- -------
+: 3 8 4 : 9 5 7 : 2 1 6 :
+: 9 7 2 : 1 6 4 : 3 5 8 :
+: 1 5 6 : 8 3 2 : 9 7 4 :
+ ------- ------- -------
+: 4 6 7 : 2 9 5 : 8 3 1 :
+: 5 1 3 : 7 8 6 : 4 2 9 :
+: 8 2 9 : 4 1 3 : 7 6 5 :
+ ------- ------- -------
+: 7 9 8 : 6 2 1 : 5 4 3 :
+: 6 4 5 : 3 7 8 : 1 9 2 :
+: 2 3 1 : 5 4 9 : 6 8 7 :
+ ------- ------- -------
+0.0016379356384277344 seconds
